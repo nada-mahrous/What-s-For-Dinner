@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <!-- Noto Color Emoji -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title & title's icon-->
+    <title>What's For Dinner</title>
+    <link rel="icon" href="imgs/favicon.png" />
+
+    <!-- fortawesome -->
+    <link rel="stylesheet" href="assets/css/plugins/css/all.min.css" />
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="assets/css/plugins/css/bootstrap.min.css" />
+
+    <!-- style&media.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+    <!-- data-bs-spy="scroll" data-bs-target="#navbar-scroll" -->
+    <!-- ========== Start Navbar ========== -->
+
+    <nav
+      id="navbar-scroll"
+      class="my-navbar navbar navbar-expand-lg bg-body-tertiary"
+    >
+      <div class="py-3 px-4 container">
+        <div class="nav-logo p-0 navbar-brand d-flex align-items-center gap-2">
+          <div
+            class="nav-icon rounded-circle d-flex align-items-center justify-content-center text-white"
+          >
+            <i class="fa fa-utensils"></i>
+          </div>
+          <div class="nav-text">
+            <h1>What's For Dinner</h1>
+            <p>Your daily meal inspiration</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <form
+            class="nav-right d-flex align-items-center ms-auto gap-3"
+            role="Sign In"
+          >
+            <button class="nav-item-btn border-0 p-0">
+              <i class="fa fa-bookmark"></i>
+              <span>Saved Recipes</span>
+            </button>
+
+            <button class="nav-item-btn border-0 p-0">
+              <i class="fa fa-clock-rotate-left"></i>
+              <span>Recent</span>
+            </button>
+
+            <button class="nav-item-btn border-0 p-0">
+              <i class="fa fa-gear"></i>
+              <span>Settings</span>
+            </button>
+
+            <button class="nav-item-btn border-0 p-0">
+              <div class="avatar rounded-circle">
+                <img
+                  src="imgs/avatar-4.jpg"
+                  alt="avatar"
+                  class="d-block w-100 rounded-circle"
+                />
+              </div>
+              <span>Profile</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- ========== End Navbar ========== -->
+    <!-- ========== Start main ========== -->
+    <main class="main">
+      <!-- ========== Start section Meals ========== -->
+      <section class="meals-section overflow-hidden">
+        <div class="container px-0">
+          <div class="meals-inner bg-white overflow-hidden">
+            <div class="row">
+              <!-- img -->
+              <div class="col-12 col-lg-5 ps-0">
+                <div class="content-left position-relative">
+                  <div class="img-holder w-100 h-100">
+                    <img
+                      id="mealImage"
+                      src="imgs/photo-1565557623262-b51c2513a641.jpg"
+                      alt="meal"
+                      class="d-block w-100 h-100"
+                    />
+                  </div>
+                  <!-- badge-top -->
+                  <div class="badge-top py-2 px-3 position-absolute bg-white">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-star me-2"></i>
+                      <span id="mealRating" class="rating me-2">4.8</span>
+                      <p id="mealReviewCount" class="reviews-count">
+                        (234 reviews)
+                      </p>
+                    </div>
+                  </div>
+                  <!-- recipe-info -->
+                  <div class="recipe-info p-4 position-absolute bg-white">
+                    <div
+                      class="text-center d-flex justify-content-center align-items-center w-100"
+                    >
+                      <!-- prepration-time -->
+                      <div class="prepration-time meal-details">
+                        <i class="fa fa-clock"></i>
+                        <p>Prep Time</p>
+                        <span id="mealPrepTime">15 min</span>
+                      </div>
+                      <!-- cook-time -->
+                      <div class="cook-time meal-details">
+                        <i class="fa fa-fire-burner"></i>
+                        <p>Cook Time</p>
+                        <span id="mealCookTime">15 min</span>
+                      </div>
+                      <!-- servings -->
+                      <div class="servings meal-details">
+                        <i class="fa fa-users"></i>
+                        <p>Servings</p>
+                        <span id="mealServings">4 people</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- content -->
+              <div class="col-12 col-lg-7 pe-0">
+                <div class="content-right">
+                  <!-- content-title -->
+                  <div
+                    class="content-title d-flex gap-3 align-items-start justify-content-between mb-4"
+                  >
+                    <!-- left -->
+                    <div>
+                      <div class="title-badge d-flex align-items-center">
+                        <p id="mealLevel">Intermediate</p>
+                        <span id="mealCountry">Asian</span>
+                      </div>
+                      <h3 id="mealName" class="meal-name mb-2">
+                        Chicken Tikka Masala
+                      </h3>
+                      <p id="mealDescription" class="meal-desc">
+                        Rich and creamy Indian curry with tender chicken pieces
+                      </p>
+                    </div>
+                    <!-- right -->
+                    <div
+                      class="send-save d-flex align-items-center gap-2 align-self-center"
+                    >
+                      <button
+                        class="d-flex align-items-center justify-content-center border-0"
+                      >
+                        <i class="fa fa-bookmark"></i>
+                      </button>
+                      <button
+                        class="d-flex align-items-center justify-content-center border-0"
+                      >
+                        <i class="fa fa-share-nodes"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- time-warning -->
+                  <div id="timeWarning" class="time-warning p-3 mb-4">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-triangle-exclamation"></i>
+                      <div class="warning-desc">
+                        <p>Extended Preparation Time</p>
+                        <span
+                          >This recipe requires more than 45 minutes to prepare.
+                          Plan accordingly!
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- nav&tabs -->
+                  <div>
+                    <ul
+                      class="nav nav-underline p-3 mb-4 justify-content-between"
+                      id="pills-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="pills-home-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-home"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-home"
+                          aria-selected="true"
+                        >
+                          <i class="fa fa-list-check"></i>
+                          Ingredients
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-profile-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-profile"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-profile"
+                          aria-selected="false"
+                        >
+                          <i class="fa fa-book-open"></i>
+                          Instructions
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-contact-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-contact"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-contact"
+                          aria-selected="false"
+                        >
+                          <i class="fa fa-chart-pie"></i>
+                          Nutrition
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="pills-tips-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#pills-tips"
+                          type="button"
+                          role="tab"
+                          aria-controls="pills-tips"
+                          aria-selected="false"
+                        >
+                          <i class="fa fa-lightbulb"></i>
+                          Chef's Tips
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-home"
+                        role="tabpanel"
+                        aria-labelledby="pills-home-tab"
+                        tabindex="0"
+                      >
+                        <!-- Ingredients -->
+                        <div class="ingredients-box p-4">
+                          <ul id="ingredientsList" class="ingredients-list">
+                            <!-- <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">1</span> 600g chicken breast, cubed
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">2</span> 1 cup plain yogurt
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">3</span> 2 tablespoons tikka masala paste
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">4</span> 400ml coconut cream
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">5</span> 1 onion, diced
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">6</span> 4 cloves garlic, minced
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">7</span> 2 tablespoons ginger, grated
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">8</span> 400g canned tomatoes
+                            </li>
+                            <li class="d-flex align-items-start">
+                              <span class="text-white rounded-circle d-flex align-items-center justify-content-center">9</span> Fresh cilantro for garnish
+                            </li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="pills-profile"
+                        role="tabpanel"
+                        aria-labelledby="pills-profile-tab"
+                        tabindex="0"
+                      >
+                        <!-- Instructions -->
+                        <div class="instructions-box">
+                          <ul id="instructionsList" class="instructions-list">
+                            <!-- <li class="d-flex align-items-start ">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >1</span
+                              >
+                              <p class="pt-2">
+                                Marinate chicken in half the yogurt and 1
+                                tablespoon tikka paste for at least 30 minutes.
+                              </p>
+                            </li>
+
+                            <li class="d-flex align-items-start ">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >2</span
+                              >
+                              <p class="pt-2">
+                                Heat oil in a large pan, cook marinated chicken
+                                until browned. Remove and set aside.
+                              </p>
+                            </li>
+
+                            <li class="d-flex align-items-start ">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >3</span
+                              >
+                              <p class="pt-2">
+                                In the same pan, sauté onion until soft. Add
+                                garlic and ginger, cook for 1 minute.
+                              </p>
+                            </li>
+
+                            <li class="d-flex align-items-start ">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >4</span
+                              >
+                              <p class="pt-2">
+                                Add remaining tikka paste and canned tomatoes.
+                                Simmer for 10 minutes.
+                              </p>
+                            </li>
+
+                            <li class="d-flex align-items-start ">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >5</span
+                              >
+                              <p class="pt-2">
+                                Stir in coconut cream and remaining yogurt. Add
+                                chicken back to the pan.
+                              </p>
+                            </li>
+
+                            <li class="d-flex align-items-start">
+                              <span
+                                class="text-white d-flex align-items-center justify-content-center me-3"
+                                >6</span
+                              >
+                              <p class="pt-2">
+                                Simmer for 15 minutes until sauce thickens.
+                                Garnish with cilantro and serve with rice.
+                              </p>
+                            </li> -->
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="pills-contact"
+                        role="tabpanel"
+                        aria-labelledby="pills-contact-tab"
+                        tabindex="0"
+                      >
+                        <!-- Nutrition -->
+                        <div class="nutrition-box ">
+                          <div class="row g-4">
+                            <!-- item -->
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon calories d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-fire"></i>
+                                  </div>
+                                  <p>Calories</p>
+                                </div>
+                                <span id="calories">450 kcal</span>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon protein d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                  </div>
+                                  <p>Protein</p>
+                                </div>
+                                <span id="protein">38g</span>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon carbs d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-wheat-awn"></i>
+                                  </div>
+                                  <p>Carbohydrates</p>
+                                </div>
+                                <span id="carbs">24g</span>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon fat d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-droplet"></i>
+                                  </div>
+                                  <p>Fat</p>
+                                </div>
+                                <span id="fat">22g</span>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon fiber d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-seedling"></i>
+                                  </div>
+                                  <p>Fiber</p>
+                                </div>
+                                <span id="fiber">4g</span>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div
+                                class="nutrition-card d-flex align-items-center justify-content-between p-3"
+                              >
+                                <div class="d-flex align-items-center gap-2">
+                                  <div
+                                    class="icon sodium d-flex align-items-center justify-content-center"
+                                  >
+                                    <i class="fa-solid fa-cube"></i>
+                                  </div>
+                                  <p>Sodium</p>
+                                </div>
+                                <span id="sodium">760mg</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="pills-tips"
+                        role="tabpanel"
+                        aria-labelledby="pills-tips-tab"
+                        tabindex="0"
+                      >
+                        <!-- Chef's Tips -->
+                        <div class="tips-box" id="tipsList">
+                          <!-- <div class="tip-item p-3 d-flex align-items-start ">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>Marinate chicken overnight for deeper flavor</p>
+                          </div>
+
+                          <div class="tip-item p-3 d-flex align-items-start ">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>Use full-fat coconut cream for richest sauce</p>
+                          </div>
+
+                          <div class="tip-item p-3 d-flex align-items-start ">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>
+                              Adjust spice level by varying the tikka paste
+                              amount
+                            </p>
+                          </div>
+
+                          <div class="tip-item p-3 d-flex align-items-start">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <p>Serve with naan bread and basmati rice</p>
+                          </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="another-recipe pt-4 d-flex align-items-center">
+                    <button onclick="createMeal()">
+                      <i class="fa fa-rotate"></i>
+                      Try Another Recipe
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End section Meals ========== -->
+    </main>
+    <!-- ========== End main ========== -->
+
+    <script src="assets/js/js bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

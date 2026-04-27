@@ -1,0 +1,140 @@
+#navbar-scroll {
+  background-color: #ffffff !important;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 1px 3px 0 #0000001a;
+  font-family: "Noto Color Emoji", sans-serif !important;
+}
+
+.my-navbar .nav-icon {
+  box-shadow: 0 10px 15px -3px #0000001a;
+  background-image: linear-gradient(
+    to right bottom,
+    oklch(0.705 0.213 47.604) 0%,
+    oklch(0.637 0.237 25.331) 100%
+  );
+  width: 48px;
+  height: 48px;
+}
+.my-navbar .nav-icon i {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.my-navbar .nav-text h1 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #101828;
+}
+.my-navbar .nav-text p {
+  /* font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #6a7282;
+}
+
+.my-navbar .nav-right button {
+  color: #4a5565;
+  background-color: transparent;
+}
+.my-navbar .nav-right .nav-item-btn i {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.my-navbar .nav-right .nav-item-btn i,
+.my-navbar .nav-right .nav-item-btn span {
+  transition: color 0.1s ease-in-out;
+}
+.my-navbar .nav-right .nav-item-btn:hover i,
+.my-navbar .nav-right .nav-item-btn:hover span {
+  color: #f54900 !important ;
+}
+.my-navbar .nav-right .avatar {
+  border: 2px solid #ffb86a;
+  width: 40px;
+  height: 40px;
+}
+.my-navbar .nav-right .avatar img {
+  vertical-align: middle;
+}
+
+
+
+/* ************************************ */
+
+.my-navbar .navbar-toggler i{
+  font-size: 20px !important;
+  line-height: 1.33333;
+  transition: color 0.1s ease-in-out;
+}
+.my-navbar .navbar-toggler i:hover {
+  color: #f54900 !important;
+  
+}
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+.nav-item-btn span {
+  display: none;
+}
+
+/******************** Media Query ********************/
+
+@media (max-width: 991px) {
+  .my-navbar .container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-collapse {
+    flex-basis: 100%;
+  }
+
+  .nav-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 24px;
+    padding-top: 24px;
+    margin-top: 18px;
+    border-top: 1px solid #eee;
+
+    
+  }
+
+  .nav-item-btn {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: transparent;
+    color: #4b5563;
+    font-size: 20px;
+  }
+
+  .nav-item-btn i {
+    width: 22px;
+    font-size: 24px;
+  }
+  .nav-item-btn span {
+    display: inline;
+  }
+
+  .nav-right .avatar {
+    width: 38px;
+    height: 38px;
+    border: 2px solid #f97316;
+  }
+}
+
+
+
+
+
