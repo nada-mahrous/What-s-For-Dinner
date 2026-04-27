@@ -14,7 +14,8 @@ A clean and interactive recipe website that helps users discover random meals wi
 
 ---
 
-## 📸 Preview
+📸 Preview  
+![What's For Dinner Preview](./preview.png)
 
 ---
 
