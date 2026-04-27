@@ -19,30 +19,32 @@ A clean and interactive recipe website that helps users discover random meals wi
 
 ---
 
-✨ Highlights  
-🎲 Random meal generation using JavaScript  
-📱 Fully responsive design across all devices  
-🍽️ Clean and structured recipe card UI  
-📖 Step-by-step cooking instructions  
-📊 Nutrition facts and meal details  
-💡 Chef tips and helpful notes  
-⚠️ Smart warning for long preparation meals  
-🎨 Modern UI with smooth layout and spacing  
+## ✨ Highlights
+
+- 🎲 Random meal generation using JavaScript  
+- 📱 Fully responsive design across all devices  
+- 🍽️ Clean and structured recipe card UI  
+- 📖 Step-by-step cooking instructions  
+- 📊 Nutrition facts and meal details  
+- 💡 Chef tips and helpful notes  
+- ⚠️ Smart warning for long preparation meals  
+- 🎨 Modern UI with smooth layout and spacing  
 
 ---
 
-🛠️ Tech Stack  
-HTML5  
-CSS3  
-Bootstrap  
-JavaScript  
-Font Awesome  
+## 🛠️ Tech Stack
+
+- **HTML5**  
+- **CSS3**  
+- **Bootstrap**  
+- **JavaScript**  
+- **Font Awesome** 
 
 ---
 
-📋 About The Project  
+## 📋 About The Project
 
-What's For Dinner is a front-end project built to improve user experience in a very common daily scenario: choosing what to eat.  
+**What's For Dinner** is a front-end project built to improve user experience in a very common daily scenario: choosing what to eat.  
 
 The application dynamically generates meals using JavaScript and updates the UI in real time without reloading the page.  
 
@@ -54,7 +56,8 @@ The focus of this project is on:
 
 ---
 
-📌 Main Sections  
+## 📌 Main Sections  
+
 Recipe Overview  
 Ingredients  
 Instructions  
@@ -63,7 +66,7 @@ Tips & Warnings
 
 ---
 
-🎨 Design Approach  
+## 🎨 Design Approach  
 
 The UI is designed with simplicity and clarity in mind, featuring:  
 
@@ -75,7 +78,7 @@ The UI is designed with simplicity and clarity in mind, featuring:
 
 ---
 
-🚀 Future Improvements  
+## 🚀 Future Improvements  
 
 🔍 Add search functionality  
 ❤️ Add favorite meals feature  
@@ -85,7 +88,7 @@ The UI is designed with simplicity and clarity in mind, featuring:
 
 ---
 
-👩‍💻 Author  
+## 👩‍💻 Author  
 
 Nada Mahrous  
 
