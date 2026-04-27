@@ -1,13 +1,20 @@
-🍽️ What's For Dinner  
-Smart Recipe Generator Web App  
+<div align="center">
 
-A modern and interactive web application that helps users instantly discover random meals with complete recipe details, making the decision of “what to eat” simple and enjoyable.
+# 🍽️ What's For Dinner
 
-🔴 Live Demo  
-👉 https://nada-mahrous.github.io/What-s-For-Dinner/
+### A Smart Recipe Generator UI
 
-📸 Preview  
-![What's For Dinner Preview](./preview.png)
+A clean and interactive recipe website that helps users discover random meals with full details including ingredients, instructions, nutrition facts, and helpful tips.
+
+<br>
+
+🔴 **[Live Demo](https://nada-mahrous.github.io/What-s-For-Dinner/)**
+
+</div>
+
+---
+
+## 📸 Preview
 
 ---
 
